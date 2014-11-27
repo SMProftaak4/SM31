@@ -1,4 +1,4 @@
-SM32
+SM31
 ====
 
 Proftaak Smart Mobile, groep 4
