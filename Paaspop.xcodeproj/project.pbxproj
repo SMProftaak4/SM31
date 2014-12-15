@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A449E1A3F225D003ED1EF /* Act.swift */; };
+		AF9A44A11A3F2DCC003ED1EF /* ActsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */; };
 		AFDCC19D1A3AE27B004D4016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC19C1A3AE27B004D4016 /* AppDelegate.swift */; };
 		AFDCC1A01A3AE27B004D4016 /* Paaspop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC19E1A3AE27B004D4016 /* Paaspop.xcdatamodeld */; };
 		AFDCC1A21A3AE27B004D4016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC1A11A3AE27B004D4016 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		AF9A449E1A3F225D003ED1EF /* Act.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
+		AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActsTableViewController.swift; sourceTree = "<group>"; };
 		AFDCC1971A3AE27B004D4016 /* Paaspop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paaspop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDCC19B1A3AE27B004D4016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFDCC19C1A3AE27B004D4016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				AFDCC1A81A3AE27B004D4016 /* LaunchScreen.xib */,
 				AFDCC19E1A3AE27B004D4016 /* Paaspop.xcdatamodeld */,
 				AFDCC19A1A3AE27B004D4016 /* Supporting Files */,
+				AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */,
 			);
 			path = Paaspop;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			files = (
 				AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */,
 				AFDCC1A21A3AE27B004D4016 /* ViewController.swift in Sources */,
+				AF9A44A11A3F2DCC003ED1EF /* ActsTableViewController.swift in Sources */,
 				AFDCC1A01A3AE27B004D4016 /* Paaspop.xcdatamodeld in Sources */,
 				AFDCC19D1A3AE27B004D4016 /* AppDelegate.swift in Sources */,
 			);

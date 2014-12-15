@@ -9,13 +9,16 @@
 import Foundation
 class Act {
     
-    var name: String
+    var title: String
+    var subtitle: String
     var info: String
     var photoUrl: String
     var times: [String]
+    var favorite: Bool
     
-    init(name: String, info: String, photoUrl: String, times: [String]){
-        self.name = name
+    init(title: String, subtitle:String, info: String, photoUrl: String, times: [String], favorite: Bool){
+        self.title = title
+        self.subtitle = subtitle
         self.info = info
         self.photoUrl = photoUrl
         if(!times.isEmpty)
@@ -26,6 +29,7 @@ class Act {
         {
             self.times = [String]()
         }
+        self.favorite = favorite
     }
     
 }
