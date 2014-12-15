@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A449E1A3F225D003ED1EF /* Act.swift */; };
 		AFDCC19D1A3AE27B004D4016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC19C1A3AE27B004D4016 /* AppDelegate.swift */; };
 		AFDCC1A01A3AE27B004D4016 /* Paaspop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC19E1A3AE27B004D4016 /* Paaspop.xcdatamodeld */; };
 		AFDCC1A21A3AE27B004D4016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC1A11A3AE27B004D4016 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF9A449E1A3F225D003ED1EF /* Act.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
 		AFDCC1971A3AE27B004D4016 /* Paaspop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paaspop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDCC19B1A3AE27B004D4016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFDCC19C1A3AE27B004D4016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF9A449D1A3F222A003ED1EF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AF9A449E1A3F225D003ED1EF /* Act.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		AFDCC18E1A3AE27B004D4016 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		AFDCC1991A3AE27B004D4016 /* Paaspop */ = {
 			isa = PBXGroup;
 			children = (
+				AF9A449D1A3F222A003ED1EF /* Classes */,
 				AFDCC19C1A3AE27B004D4016 /* AppDelegate.swift */,
 				AFDCC1A11A3AE27B004D4016 /* ViewController.swift */,
 				AFDCC1A31A3AE27B004D4016 /* Main.storyboard */,
@@ -215,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */,
 				AFDCC1A21A3AE27B004D4016 /* ViewController.swift in Sources */,
 				AFDCC1A01A3AE27B004D4016 /* Paaspop.xcdatamodeld in Sources */,
 				AFDCC19D1A3AE27B004D4016 /* AppDelegate.swift in Sources */,
@@ -415,6 +427,7 @@
 				AFDCC1BB1A3AE27B004D4016 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFDCC1BC1A3AE27B004D4016 /* Build configuration list for PBXNativeTarget "PaaspopTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +436,7 @@
 				AFDCC1BE1A3AE27B004D4016 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
