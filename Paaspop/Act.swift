@@ -13,14 +13,16 @@ class Act {
     var subtitle: String
     var info: String
     var photoUrl: String
+    var stage: String
     var times: [String]
     var favorite: Bool
     
-    init(title: String, subtitle:String, info: String, photoUrl: String, times: [String], favorite: Bool){
+    init(title: String, subtitle:String, info: String, photoUrl: String, stage: String,times: [String], favorite: Bool){
         self.title = title
         self.subtitle = subtitle
         self.info = info
         self.photoUrl = photoUrl
+        self.stage = stage
         if(!times.isEmpty)
         {
             self.times = times

@@ -14,6 +14,8 @@ class ActsDetailViewController: UIViewController {
     var act: Act!
 
     @IBOutlet weak var ivPhoto: UIImageView!
+    @IBOutlet weak var lblTime: UILabel!
+    @IBOutlet weak var tvInfo: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,12 @@ class ActsDetailViewController: UIViewController {
             title = act.title
         }
         self.title  = title
+        let image : UIImage = UIImage(named: act.photoUrl)!
+        ivPhoto.image = image
+        lblTime.text = act.stage
+        tvInfo.text = act.info
+
+        
         // Do any additional setup after loading the view.
     }
 
