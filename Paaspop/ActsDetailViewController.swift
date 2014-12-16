@@ -13,7 +13,6 @@ class ActsDetailViewController: UIViewController {
     //act variable
     var act: Act!
 
-    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var ivPhoto: UIImageView!
     
     override func viewDidLoad() {
@@ -24,7 +23,7 @@ class ActsDetailViewController: UIViewController {
         } else{
             title = act.title
         }
-        lblTitle.text = title
+        self.title  = title
         // Do any additional setup after loading the view.
     }
 

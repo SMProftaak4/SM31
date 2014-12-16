@@ -118,8 +118,6 @@ class ActsTableViewController: UITableViewController, UISearchBarDelegate, UISea
                 actDetailViewController.act = self.filteredActs[indexPath.row]
             } else {
                 let indexPath = self.tableView.indexPathForSelectedRow()!
-                let destinationTitle = self.acts[indexPath.row].title
-                actDetailViewController.title = destinationTitle
                 actDetailViewController.act = self.acts[indexPath.row]
             }
         }
