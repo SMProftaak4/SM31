@@ -62,7 +62,7 @@ class ActsTableViewController: UITableViewController, UISearchBarDelegate, UISea
         //ask for a reusable cell from the tableview, the tableview will create a new one if it doesn't have any
         let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as ActTableViewCell
         
-        var act : Act
+        var act: Act
         // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
         if tableView == self.searchDisplayController!.searchResultsTableView {
             act = filteredActs[indexPath.row]
@@ -71,8 +71,15 @@ class ActsTableViewController: UITableViewController, UISearchBarDelegate, UISea
         }
         
         // Configure the cell
+        /*var title: String
+        if !act.subtitle.isEmpty{
+            title = act.title + "(" + act.subtitle + ")"
+        } else{
+            title = act.title
+        }*/
+
         cell.lblTitle.text = act.title
-        cell.lblTime.text = act.subtitle
+        cell.lblTime.text = act.stage
         let image : UIImage = UIImage(named: act.photoUrl)!
         cell.lvPhoto.image = image
         
