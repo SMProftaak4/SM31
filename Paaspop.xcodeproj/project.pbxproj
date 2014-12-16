@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF784BFD1A4023FD00ECDBF2 /* ActsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF784BFC1A4023FD00ECDBF2 /* ActsDetailViewController.swift */; };
 		AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A449E1A3F225D003ED1EF /* Act.swift */; };
 		AF9A44A11A3F2DCC003ED1EF /* ActsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */; };
 		AFDCC19D1A3AE27B004D4016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC19C1A3AE27B004D4016 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF784BFC1A4023FD00ECDBF2 /* ActsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActsDetailViewController.swift; sourceTree = "<group>"; };
 		AF9A449E1A3F225D003ED1EF /* Act.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
 		AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActsTableViewController.swift; sourceTree = "<group>"; };
 		AFDCC1971A3AE27B004D4016 /* Paaspop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paaspop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 				AFDCC19E1A3AE27B004D4016 /* Paaspop.xcdatamodeld */,
 				AFDCC19A1A3AE27B004D4016 /* Supporting Files */,
 				AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */,
+				AF784BFC1A4023FD00ECDBF2 /* ActsDetailViewController.swift */,
 			);
 			path = Paaspop;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF784BFD1A4023FD00ECDBF2 /* ActsDetailViewController.swift in Sources */,
 				AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */,
 				AFDCC1A21A3AE27B004D4016 /* ViewController.swift in Sources */,
 				AF9A44A11A3F2DCC003ED1EF /* ActsTableViewController.swift in Sources */,

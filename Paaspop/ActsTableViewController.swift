@@ -110,15 +110,17 @@ class ActsTableViewController: UITableViewController, UISearchBarDelegate, UISea
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "actDetail" {
-            let actDetailViewController = segue.destinationViewController as UIViewController
+            let actDetailViewController = segue.destinationViewController as ActsDetailViewController
             if sender as UITableView == self.searchDisplayController!.searchResultsTableView {
                 let indexPath = self.searchDisplayController!.searchResultsTableView.indexPathForSelectedRow()!
                 let destinationTitle = self.filteredActs[indexPath.row].title
                 actDetailViewController.title = destinationTitle
+                actDetailViewController.act = self.filteredActs[indexPath.row]
             } else {
                 let indexPath = self.tableView.indexPathForSelectedRow()!
                 let destinationTitle = self.acts[indexPath.row].title
                 actDetailViewController.title = destinationTitle
+                actDetailViewController.act = self.acts[indexPath.row]
             }
         }
     }
