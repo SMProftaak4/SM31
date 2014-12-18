@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF5D7A141A42C7C8004F89F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D7A131A42C7C8004F89F3 /* HomeViewController.swift */; };
+		AF5D7A161A42C84F004F89F3 /* Paaspop2015Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A151A42C84F004F89F3 /* Paaspop2015Logo.jpg */; };
+		AF5D7A181A42CA44004F89F3 /* paaspopLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A171A42CA44004F89F3 /* paaspopLogo.png */; };
+		AF5D7A1A1A42CE04004F89F3 /* paaspopHead.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A191A42CE04004F89F3 /* paaspopHead.png */; };
+		AF5D7A221A42DB6C004F89F3 /* artist_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A1C1A42DB6C004F89F3 /* artist_Button.png */; };
+		AF5D7A231A42DB6C004F89F3 /* blog_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A1D1A42DB6C004F89F3 /* blog_Button.png */; };
+		AF5D7A241A42DB6C004F89F3 /* lost_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A1E1A42DB6C004F89F3 /* lost_Button.png */; };
+		AF5D7A251A42DB6C004F89F3 /* map_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A1F1A42DB6C004F89F3 /* map_Button.png */; };
+		AF5D7A261A42DB6C004F89F3 /* personal_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A201A42DB6C004F89F3 /* personal_Button.png */; };
+		AF5D7A271A42DB6C004F89F3 /* timetable_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A211A42DB6C004F89F3 /* timetable_Button.png */; };
 		AF784BFD1A4023FD00ECDBF2 /* ActsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF784BFC1A4023FD00ECDBF2 /* ActsDetailViewController.swift */; };
 		AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A449E1A3F225D003ED1EF /* Act.swift */; };
 		AF9A44A11A3F2DCC003ED1EF /* ActsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */; };
@@ -22,7 +32,6 @@
 		AFA0CD5E1A40AD8F00902249 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0CD5D1A40AD8F00902249 /* NewsDetailViewController.swift */; };
 		AFDCC19D1A3AE27B004D4016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC19C1A3AE27B004D4016 /* AppDelegate.swift */; };
 		AFDCC1A01A3AE27B004D4016 /* Paaspop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC19E1A3AE27B004D4016 /* Paaspop.xcdatamodeld */; };
-		AFDCC1A21A3AE27B004D4016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC1A11A3AE27B004D4016 /* ViewController.swift */; };
 		AFDCC1A51A3AE27B004D4016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDCC1A31A3AE27B004D4016 /* Main.storyboard */; };
 		AFDCC1A71A3AE27B004D4016 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDCC1A61A3AE27B004D4016 /* Images.xcassets */; };
 		AFDCC1AA1A3AE27B004D4016 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDCC1A81A3AE27B004D4016 /* LaunchScreen.xib */; };
@@ -40,6 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF5D7A131A42C7C8004F89F3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AF5D7A151A42C84F004F89F3 /* Paaspop2015Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Paaspop2015Logo.jpg; sourceTree = "<group>"; };
+		AF5D7A171A42CA44004F89F3 /* paaspopLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paaspopLogo.png; sourceTree = "<group>"; };
+		AF5D7A191A42CE04004F89F3 /* paaspopHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paaspopHead.png; sourceTree = "<group>"; };
+		AF5D7A1C1A42DB6C004F89F3 /* artist_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artist_Button.png; sourceTree = "<group>"; };
+		AF5D7A1D1A42DB6C004F89F3 /* blog_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blog_Button.png; sourceTree = "<group>"; };
+		AF5D7A1E1A42DB6C004F89F3 /* lost_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lost_Button.png; sourceTree = "<group>"; };
+		AF5D7A1F1A42DB6C004F89F3 /* map_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_Button.png; sourceTree = "<group>"; };
+		AF5D7A201A42DB6C004F89F3 /* personal_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal_Button.png; sourceTree = "<group>"; };
+		AF5D7A211A42DB6C004F89F3 /* timetable_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timetable_Button.png; sourceTree = "<group>"; };
 		AF784BFC1A4023FD00ECDBF2 /* ActsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActsDetailViewController.swift; sourceTree = "<group>"; };
 		AF9A449E1A3F225D003ED1EF /* Act.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
 		AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActsTableViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +76,6 @@
 		AFDCC19B1A3AE27B004D4016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFDCC19C1A3AE27B004D4016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFDCC19F1A3AE27B004D4016 /* Paaspop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Paaspop.xcdatamodel; sourceTree = "<group>"; };
-		AFDCC1A11A3AE27B004D4016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFDCC1A41A3AE27B004D4016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFDCC1A61A3AE27B004D4016 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AFDCC1A91A3AE27B004D4016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -84,6 +102,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF5D7A1B1A42DB6C004F89F3 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				AF5D7A1C1A42DB6C004F89F3 /* artist_Button.png */,
+				AF5D7A1D1A42DB6C004F89F3 /* blog_Button.png */,
+				AF5D7A1E1A42DB6C004F89F3 /* lost_Button.png */,
+				AF5D7A1F1A42DB6C004F89F3 /* map_Button.png */,
+				AF5D7A201A42DB6C004F89F3 /* personal_Button.png */,
+				AF5D7A211A42DB6C004F89F3 /* timetable_Button.png */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
 		AF9A449D1A3F222A003ED1EF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +127,9 @@
 		AFA0CD481A408D9400902249 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				AF5D7A191A42CE04004F89F3 /* paaspopHead.png */,
+				AF5D7A171A42CA44004F89F3 /* paaspopLogo.png */,
+				AF5D7A151A42C84F004F89F3 /* Paaspop2015Logo.jpg */,
 				AFA0CD4C1A408DEE00902249 /* anouk.jpg */,
 				AFA0CD491A408DEE00902249 /* againstme.jpg */,
 				AFA0CD4A1A408DEE00902249 /* bestoffoo.jpg */,
@@ -126,10 +160,10 @@
 		AFDCC1991A3AE27B004D4016 /* Paaspop */ = {
 			isa = PBXGroup;
 			children = (
+				AF5D7A1B1A42DB6C004F89F3 /* buttons */,
 				AFA0CD481A408D9400902249 /* img */,
 				AF9A449D1A3F222A003ED1EF /* Classes */,
 				AFDCC19C1A3AE27B004D4016 /* AppDelegate.swift */,
-				AFDCC1A11A3AE27B004D4016 /* ViewController.swift */,
 				AFDCC1A31A3AE27B004D4016 /* Main.storyboard */,
 				AFDCC1A61A3AE27B004D4016 /* Images.xcassets */,
 				AFDCC1A81A3AE27B004D4016 /* LaunchScreen.xib */,
@@ -141,6 +175,7 @@
 				AFA0CD571A40AD0200902249 /* NewsTableViewController.swift */,
 				AFA0CD591A40AD2300902249 /* NewsTableViewCell.swift */,
 				AFA0CD5D1A40AD8F00902249 /* NewsDetailViewController.swift */,
+				AF5D7A131A42C7C8004F89F3 /* HomeViewController.swift */,
 			);
 			path = Paaspop;
 			sourceTree = "<group>";
@@ -251,13 +286,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFDCC1A51A3AE27B004D4016 /* Main.storyboard in Resources */,
+				AF5D7A181A42CA44004F89F3 /* paaspopLogo.png in Resources */,
 				AFA0CD521A408DEE00902249 /* colincloud.jpg in Resources */,
 				AFA0CD4F1A408DEE00902249 /* bestoffoo.jpg in Resources */,
 				AFA0CD4E1A408DEE00902249 /* againstme.jpg in Resources */,
+				AF5D7A261A42DB6C004F89F3 /* personal_Button.png in Resources */,
+				AF5D7A161A42C84F004F89F3 /* Paaspop2015Logo.jpg in Resources */,
 				AFDCC1AA1A3AE27B004D4016 /* LaunchScreen.xib in Resources */,
 				AFA0CD511A408DEE00902249 /* anouk.jpg in Resources */,
+				AF5D7A231A42DB6C004F89F3 /* blog_Button.png in Resources */,
+				AF5D7A1A1A42CE04004F89F3 /* paaspopHead.png in Resources */,
 				AFA0CD501A408DEE00902249 /* bluespills.jpg in Resources */,
+				AF5D7A221A42DB6C004F89F3 /* artist_Button.png in Resources */,
+				AF5D7A251A42DB6C004F89F3 /* map_Button.png in Resources */,
 				AFDCC1A71A3AE27B004D4016 /* Images.xcassets in Resources */,
+				AF5D7A271A42DB6C004F89F3 /* timetable_Button.png in Resources */,
+				AF5D7A241A42DB6C004F89F3 /* lost_Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +323,10 @@
 				AF784BFD1A4023FD00ECDBF2 /* ActsDetailViewController.swift in Sources */,
 				AFA0CD5A1A40AD2300902249 /* NewsTableViewCell.swift in Sources */,
 				AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */,
-				AFDCC1A21A3AE27B004D4016 /* ViewController.swift in Sources */,
 				AF9A44A11A3F2DCC003ED1EF /* ActsTableViewController.swift in Sources */,
 				AFA0CD5E1A40AD8F00902249 /* NewsDetailViewController.swift in Sources */,
 				AFA0CD541A40AB8100902249 /* NewsItem.swift in Sources */,
+				AF5D7A141A42C7C8004F89F3 /* HomeViewController.swift in Sources */,
 				AFDCC1A01A3AE27B004D4016 /* Paaspop.xcdatamodeld in Sources */,
 				AFDCC19D1A3AE27B004D4016 /* AppDelegate.swift in Sources */,
 				AFA0CD581A40AD0200902249 /* NewsTableViewController.swift in Sources */,
