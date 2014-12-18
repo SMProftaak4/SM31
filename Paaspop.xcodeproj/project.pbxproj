@@ -10,13 +10,14 @@
 		AF5D7A141A42C7C8004F89F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D7A131A42C7C8004F89F3 /* HomeViewController.swift */; };
 		AF5D7A161A42C84F004F89F3 /* Paaspop2015Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A151A42C84F004F89F3 /* Paaspop2015Logo.jpg */; };
 		AF5D7A181A42CA44004F89F3 /* paaspopLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A171A42CA44004F89F3 /* paaspopLogo.png */; };
-		AF5D7A1A1A42CE04004F89F3 /* paaspopHead.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A191A42CE04004F89F3 /* paaspopHead.png */; };
 		AF5D7A221A42DB6C004F89F3 /* artist_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A1C1A42DB6C004F89F3 /* artist_Button.png */; };
 		AF5D7A231A42DB6C004F89F3 /* blog_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A1D1A42DB6C004F89F3 /* blog_Button.png */; };
 		AF5D7A241A42DB6C004F89F3 /* lost_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A1E1A42DB6C004F89F3 /* lost_Button.png */; };
 		AF5D7A251A42DB6C004F89F3 /* map_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A1F1A42DB6C004F89F3 /* map_Button.png */; };
 		AF5D7A261A42DB6C004F89F3 /* personal_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A201A42DB6C004F89F3 /* personal_Button.png */; };
 		AF5D7A271A42DB6C004F89F3 /* timetable_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A211A42DB6C004F89F3 /* timetable_Button.png */; };
+		AF5D7A291A42E793004F89F3 /* paaspopHead.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A281A42E793004F89F3 /* paaspopHead.png */; };
+		AF5D7A2B1A42F01C004F89F3 /* iLostLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D7A2A1A42F01C004F89F3 /* iLostLogo.png */; };
 		AF784BFD1A4023FD00ECDBF2 /* ActsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF784BFC1A4023FD00ECDBF2 /* ActsDetailViewController.swift */; };
 		AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A449E1A3F225D003ED1EF /* Act.swift */; };
 		AF9A44A11A3F2DCC003ED1EF /* ActsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */; };
@@ -52,13 +53,14 @@
 		AF5D7A131A42C7C8004F89F3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AF5D7A151A42C84F004F89F3 /* Paaspop2015Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Paaspop2015Logo.jpg; sourceTree = "<group>"; };
 		AF5D7A171A42CA44004F89F3 /* paaspopLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paaspopLogo.png; sourceTree = "<group>"; };
-		AF5D7A191A42CE04004F89F3 /* paaspopHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paaspopHead.png; sourceTree = "<group>"; };
 		AF5D7A1C1A42DB6C004F89F3 /* artist_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artist_Button.png; sourceTree = "<group>"; };
 		AF5D7A1D1A42DB6C004F89F3 /* blog_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blog_Button.png; sourceTree = "<group>"; };
 		AF5D7A1E1A42DB6C004F89F3 /* lost_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lost_Button.png; sourceTree = "<group>"; };
 		AF5D7A1F1A42DB6C004F89F3 /* map_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_Button.png; sourceTree = "<group>"; };
 		AF5D7A201A42DB6C004F89F3 /* personal_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal_Button.png; sourceTree = "<group>"; };
 		AF5D7A211A42DB6C004F89F3 /* timetable_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timetable_Button.png; sourceTree = "<group>"; };
+		AF5D7A281A42E793004F89F3 /* paaspopHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paaspopHead.png; sourceTree = "<group>"; };
+		AF5D7A2A1A42F01C004F89F3 /* iLostLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iLostLogo.png; sourceTree = "<group>"; };
 		AF784BFC1A4023FD00ECDBF2 /* ActsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActsDetailViewController.swift; sourceTree = "<group>"; };
 		AF9A449E1A3F225D003ED1EF /* Act.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
 		AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActsTableViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +129,8 @@
 		AFA0CD481A408D9400902249 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				AF5D7A191A42CE04004F89F3 /* paaspopHead.png */,
+				AF5D7A2A1A42F01C004F89F3 /* iLostLogo.png */,
+				AF5D7A281A42E793004F89F3 /* paaspopHead.png */,
 				AF5D7A171A42CA44004F89F3 /* paaspopLogo.png */,
 				AF5D7A151A42C84F004F89F3 /* Paaspop2015Logo.jpg */,
 				AFA0CD4C1A408DEE00902249 /* anouk.jpg */,
@@ -285,7 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5D7A2B1A42F01C004F89F3 /* iLostLogo.png in Resources */,
 				AFDCC1A51A3AE27B004D4016 /* Main.storyboard in Resources */,
+				AF5D7A291A42E793004F89F3 /* paaspopHead.png in Resources */,
 				AF5D7A181A42CA44004F89F3 /* paaspopLogo.png in Resources */,
 				AFA0CD521A408DEE00902249 /* colincloud.jpg in Resources */,
 				AFA0CD4F1A408DEE00902249 /* bestoffoo.jpg in Resources */,
@@ -295,7 +300,6 @@
 				AFDCC1AA1A3AE27B004D4016 /* LaunchScreen.xib in Resources */,
 				AFA0CD511A408DEE00902249 /* anouk.jpg in Resources */,
 				AF5D7A231A42DB6C004F89F3 /* blog_Button.png in Resources */,
-				AF5D7A1A1A42CE04004F89F3 /* paaspopHead.png in Resources */,
 				AFA0CD501A408DEE00902249 /* bluespills.jpg in Resources */,
 				AF5D7A221A42DB6C004F89F3 /* artist_Button.png in Resources */,
 				AF5D7A251A42DB6C004F89F3 /* map_Button.png in Resources */,

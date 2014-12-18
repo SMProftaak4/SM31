@@ -89,13 +89,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CH-5U-9Cf">
-                                            <rect key="frame" x="70" y="0.0" width="334" height="29"/>
+                                            <rect key="frame" x="83" y="0.0" width="334" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-7w-We7">
-                                            <rect key="frame" x="70" y="37" width="334" height="21"/>
+                                            <rect key="frame" x="83" y="37" width="334" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -227,43 +227,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiU-Ng-qWu">
-                                <rect key="frame" x="121" y="154" width="124" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="124" id="41p-c8-sdb"/>
-                                    <constraint firstAttribute="height" constant="45" id="jUk-b8-aRL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="Timetable" backgroundImage="timetable_Button.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qJ-KP-PTi">
-                                <rect key="frame" x="47" y="398" width="198" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="198" id="7uF-bE-V0B"/>
-                                    <constraint firstAttribute="height" constant="45" id="uWh-68-zCZ"/>
-                                </constraints>
-                                <state key="normal" title="Lost en Found" image="lost_Button.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzs-q2-sXE">
-                                <rect key="frame" x="36" y="93" width="209" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="209" id="Eao-Ol-ayd"/>
-                                    <constraint firstAttribute="height" constant="45" id="meg-gu-qdw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="Artists" backgroundImage="artist_Button.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="s5G-0D-9DE" kind="show" id="Bma-4L-IlS"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GP0-9d-rFL">
                                 <rect key="frame" x="-1" y="93" width="155" height="350"/>
                                 <constraints>
@@ -271,38 +234,30 @@
                                     <constraint firstAttribute="width" constant="155" id="wLl-4I-T5g"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNk-ZL-bzT">
-                                <rect key="frame" x="155" y="215" width="90" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiU-Ng-qWu">
+                                <rect key="frame" x="84" y="154" width="192" height="45"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="Ycq-I5-5Nr"/>
-                                    <constraint firstAttribute="height" constant="45" id="sLS-OH-qQf"/>
+                                    <constraint firstAttribute="width" constant="192" id="41p-c8-sdb"/>
+                                    <constraint firstAttribute="height" constant="45" id="jUk-b8-aRL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="Personal" backgroundImage="personal_Button.png">
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Timetable">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOP-xl-li0">
-                                <rect key="frame" x="142" y="276" width="114" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="Ycc-iD-p0E"/>
-                                    <constraint firstAttribute="width" constant="114" id="sDJ-9i-tFg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="Map" backgroundImage="map_Button.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxc-d3-iL1">
-                                <rect key="frame" x="137" y="337" width="108" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxc-d3-iL1">
+                                <rect key="frame" x="100" y="337" width="176" height="45"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="WDr-1M-NvO"/>
-                                    <constraint firstAttribute="width" constant="108" id="rfB-p1-lJ6"/>
+                                    <constraint firstAttribute="width" constant="176" id="rfB-p1-lJ6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="Blog" backgroundImage="blog_Button.png">
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Blog">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -310,19 +265,77 @@
                                     <segue destination="m0E-5P-2C4" kind="show" id="ubh-vR-AU4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qJ-KP-PTi">
+                                <rect key="frame" x="10" y="398" width="266" height="45"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="7uF-bE-V0B"/>
+                                    <constraint firstAttribute="height" constant="45" id="uWh-68-zCZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Lost &amp; Found">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzs-q2-sXE">
+                                <rect key="frame" x="-1" y="93" width="277" height="45"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="277" id="Eao-Ol-ayd"/>
+                                    <constraint firstAttribute="height" constant="45" id="meg-gu-qdw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Artists">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s5G-0D-9DE" kind="show" id="Bma-4L-IlS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNk-ZL-bzT">
+                                <rect key="frame" x="118" y="215" width="158" height="45"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="Ycq-I5-5Nr"/>
+                                    <constraint firstAttribute="height" constant="45" id="sLS-OH-qQf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Personal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOP-xl-li0">
+                                <rect key="frame" x="105" y="276" width="171" height="45"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ycc-iD-p0E"/>
+                                    <constraint firstAttribute="width" constant="171" id="sDJ-9i-tFg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2196078431372549" green="0.16078431372549021" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jxc-d3-iL1" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-17" id="7sT-Ik-TxY"/>
+                            <constraint firstItem="jxc-d3-iL1" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-54" id="7sT-Ik-TxY"/>
                             <constraint firstItem="GP0-9d-rFL" firstAttribute="top" secondItem="nzs-q2-sXE" secondAttribute="top" id="D2o-or-MHH"/>
-                            <constraint firstItem="7qJ-KP-PTi" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-107" id="EDh-AQ-syd"/>
-                            <constraint firstItem="BOP-xl-li0" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-12" id="Jmp-lR-31a"/>
+                            <constraint firstItem="7qJ-KP-PTi" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-144" id="EDh-AQ-syd"/>
+                            <constraint firstItem="BOP-xl-li0" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-49" id="Jmp-lR-31a"/>
                             <constraint firstItem="BOP-xl-li0" firstAttribute="top" secondItem="TNk-ZL-bzT" secondAttribute="bottom" constant="16" id="NYf-8s-ZOT"/>
-                            <constraint firstItem="TNk-ZL-bzT" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="1" id="Tm8-IV-uJN"/>
+                            <constraint firstItem="TNk-ZL-bzT" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-36" id="Tm8-IV-uJN"/>
                             <constraint firstItem="BiU-Ng-qWu" firstAttribute="top" secondItem="nzs-q2-sXE" secondAttribute="bottom" constant="16" id="WOQ-sN-EZr"/>
                             <constraint firstAttribute="centerY" secondItem="GP0-9d-rFL" secondAttribute="centerY" id="aBh-xd-Rol"/>
-                            <constraint firstItem="BiU-Ng-qWu" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-33" id="bY9-PY-98D"/>
-                            <constraint firstItem="nzs-q2-sXE" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-118" id="doL-bQ-q89"/>
+                            <constraint firstItem="BiU-Ng-qWu" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-70" id="bY9-PY-98D"/>
+                            <constraint firstItem="nzs-q2-sXE" firstAttribute="leading" secondItem="GP0-9d-rFL" secondAttribute="trailing" constant="-155" id="doL-bQ-q89"/>
                             <constraint firstItem="GP0-9d-rFL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-17" id="hao-qZ-chJ"/>
                             <constraint firstItem="7qJ-KP-PTi" firstAttribute="top" secondItem="jxc-d3-iL1" secondAttribute="bottom" constant="16" id="jah-Ix-5jX"/>
                             <constraint firstItem="TNk-ZL-bzT" firstAttribute="top" secondItem="BiU-Ng-qWu" secondAttribute="bottom" constant="16" id="ktk-sm-MV3"/>
@@ -331,6 +344,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Paaspop" id="fvI-bR-cha"/>
                     <connections>
+                        <outlet property="ButtonILost" destination="7qJ-KP-PTi" id="BkE-2G-eXF"/>
+                        <outlet property="buttonArtist" destination="nzs-q2-sXE" id="bpw-vk-N74"/>
+                        <outlet property="buttonBlog" destination="jxc-d3-iL1" id="aS5-rL-7nb"/>
+                        <outlet property="buttonMap" destination="BOP-xl-li0" id="hJg-ol-I7D"/>
+                        <outlet property="buttonPersonal" destination="TNk-ZL-bzT" id="uwJ-Fm-d6r"/>
+                        <outlet property="buttonTime" destination="BiU-Ng-qWu" id="i2y-J2-srm"/>
                         <outlet property="ivPhoto" destination="GP0-9d-rFL" id="02K-t3-vs7"/>
                     </connections>
                 </viewController>
@@ -379,13 +398,5 @@
             <point key="canvasLocation" x="-140" y="237"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="artist_Button.png" width="914" height="154"/>
-        <image name="blog_Button.png" width="526" height="155"/>
-        <image name="lost_Button.png" width="526" height="155"/>
-        <image name="map_Button.png" width="526" height="155"/>
-        <image name="personal_Button.png" width="416" height="155"/>
-        <image name="timetable_Button.png" width="526" height="155"/>
-    </resources>
     <color key="tintColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>
