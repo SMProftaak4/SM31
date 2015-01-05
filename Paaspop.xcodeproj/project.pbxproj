@@ -37,10 +37,11 @@
 		AFDCC1A71A3AE27B004D4016 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDCC1A61A3AE27B004D4016 /* Images.xcassets */; };
 		AFDCC1AA1A3AE27B004D4016 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDCC1A81A3AE27B004D4016 /* LaunchScreen.xib */; };
 		AFDCC1B61A3AE27B004D4016 /* PaaspopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC1B51A3AE27B004D4016 /* PaaspopTests.swift */; };
+		F51E6CA41A5AB94F0067CCA8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E6CA31A5AB94F0067CCA8 /* GlobalVariables.swift */; };
 		F595AD471A56AF7100DE8D0A /* Sketched_StageMap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F595AD461A56AF7100DE8D0A /* Sketched_StageMap.jpg */; };
 		F595AD4B1A5773CA00DE8D0A /* FloorPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595AD4A1A5773CA00DE8D0A /* FloorPlanViewController.swift */; };
 		F595AD4D1A57835D00DE8D0A /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595AD4C1A57835D00DE8D0A /* Stage.swift */; };
-		F595AD4F1A57A75400DE8D0A /* StageUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595AD4E1A57A75300DE8D0A /* StageUIButton.swift */; };
+		F5D03E351A5865B50043C140 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D03E341A5865B50043C140 /* TimetableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,10 +89,11 @@
 		AFDCC1AF1A3AE27B004D4016 /* PaaspopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaaspopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDCC1B41A3AE27B004D4016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFDCC1B51A3AE27B004D4016 /* PaaspopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaaspopTests.swift; sourceTree = "<group>"; };
+		F51E6CA31A5AB94F0067CCA8 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		F595AD461A56AF7100DE8D0A /* Sketched_StageMap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sketched_StageMap.jpg; path = ../../Downloads/Sketched_StageMap.jpg; sourceTree = "<group>"; };
 		F595AD4A1A5773CA00DE8D0A /* FloorPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorPlanViewController.swift; sourceTree = "<group>"; };
 		F595AD4C1A57835D00DE8D0A /* Stage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
-		F595AD4E1A57A75300DE8D0A /* StageUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageUIButton.swift; sourceTree = "<group>"; };
+		F5D03E341A5865B50043C140 /* TimetableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,12 +183,13 @@
 				AFDCC1A61A3AE27B004D4016 /* Images.xcassets */,
 				AFDCC1A81A3AE27B004D4016 /* LaunchScreen.xib */,
 				AFDCC19E1A3AE27B004D4016 /* Paaspop.xcdatamodeld */,
+				F51E6CA31A5AB94F0067CCA8 /* GlobalVariables.swift */,
 				AFDCC19A1A3AE27B004D4016 /* Supporting Files */,
 				AF9A44A01A3F2DCC003ED1EF /* ActsTableViewController.swift */,
 				AF784BFC1A4023FD00ECDBF2 /* ActsDetailViewController.swift */,
 				AFA0CD461A40813000902249 /* ActTableViewCell.swift */,
 				AFA0CD571A40AD0200902249 /* NewsTableViewController.swift */,
-				F595AD4E1A57A75300DE8D0A /* StageUIButton.swift */,
+				F5D03E341A5865B50043C140 /* TimetableViewController.swift */,
 				AFA0CD591A40AD2300902249 /* NewsTableViewCell.swift */,
 				AFA0CD5D1A40AD8F00902249 /* NewsDetailViewController.swift */,
 				AF5D7A131A42C7C8004F89F3 /* HomeViewController.swift */,
@@ -336,15 +339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F595AD4F1A57A75400DE8D0A /* StageUIButton.swift in Sources */,
 				AFA0CD471A40813000902249 /* ActTableViewCell.swift in Sources */,
 				AF784BFD1A4023FD00ECDBF2 /* ActsDetailViewController.swift in Sources */,
 				AFA0CD5A1A40AD2300902249 /* NewsTableViewCell.swift in Sources */,
 				AF9A449F1A3F225D003ED1EF /* Act.swift in Sources */,
 				AF9A44A11A3F2DCC003ED1EF /* ActsTableViewController.swift in Sources */,
 				AFA0CD5E1A40AD8F00902249 /* NewsDetailViewController.swift in Sources */,
+				F5D03E351A5865B50043C140 /* TimetableViewController.swift in Sources */,
 				AFA0CD541A40AB8100902249 /* NewsItem.swift in Sources */,
 				AF5D7A141A42C7C8004F89F3 /* HomeViewController.swift in Sources */,
+				F51E6CA41A5AB94F0067CCA8 /* GlobalVariables.swift in Sources */,
 				F595AD4B1A5773CA00DE8D0A /* FloorPlanViewController.swift in Sources */,
 				AFDCC1A01A3AE27B004D4016 /* Paaspop.xcdatamodeld in Sources */,
 				AFDCC19D1A3AE27B004D4016 /* AppDelegate.swift in Sources */,

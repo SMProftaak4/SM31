@@ -207,8 +207,11 @@
                                     <action selector="onStageTouch:" destination="B0P-Lf-O9W" eventType="touchUpInside" id="tc7-Sf-ev0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Stage Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0K6-P9-Tgc">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Stage Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0K6-P9-Tgc">
                                 <rect key="frame" x="0.0" y="20" width="600" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" staticText="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -223,6 +226,12 @@
                                     <action selector="onStageTouch:" destination="B0P-Lf-O9W" eventType="touchUpInside" id="dMS-Aq-keT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="current act: null" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMV-2y-USq">
+                                <rect key="frame" x="241" y="54" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -233,6 +242,7 @@
                         <outlet property="Stage3" destination="RR2-0l-7hz" id="bp1-Gw-BN1"/>
                         <outlet property="Stage4" destination="Qkl-7l-Fj2" id="kTE-FE-rsR"/>
                         <outlet property="Stage5" destination="ZM0-Ku-4sP" id="eRX-M4-8hv"/>
+                        <outlet property="currentActLabel" destination="KMV-2y-USq" id="bY7-yU-DH0"/>
                         <outlet property="stageLabel" destination="0K6-P9-Tgc" id="9mJ-jF-yQu"/>
                     </connections>
                 </viewController>
@@ -308,6 +318,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mmr-lN-vsq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2061" y="-473"/>
+        </scene>
+        <!--Timetable View Controller-->
+        <scene sceneID="eRP-bj-Lsc">
+            <objects>
+                <viewController id="h7K-1f-Siz" customClass="TimetableViewController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Agj-JM-ZRz"/>
+                        <viewControllerLayoutGuide type="bottom" id="EMq-GN-aDl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xoD-XC-hn3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQy-XN-7Sy">
+                                <rect key="frame" x="0.0" y="28" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqn-lO-eQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2172" y="237"/>
         </scene>
         <!--Paaspop-->
         <scene sceneID="ufC-wZ-h7g">

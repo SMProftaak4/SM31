@@ -15,14 +15,14 @@ class Stage{
     var name : String
     var occupancy : Int
     
-    /// Currently unimplemented.
     /// Displays list of acts at the stage a in chronological order.
-    //var _acts : [Act]
+    var acts : [Act]
     
     
     init(name : String){
         self.name = name
         self.occupancy = 0
+        self.acts = [Act]()
         randomizeData() // Fake occupancy data
     }
 
