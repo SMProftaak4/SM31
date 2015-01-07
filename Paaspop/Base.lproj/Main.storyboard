@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -52,7 +53,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qz-7N-ocY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="154" y="1081"/>
+            <point key="canvasLocation" x="644" y="1693"/>
         </scene>
         <!--Acts-->
         <scene sceneID="Ao6-zy-SAp">
@@ -158,8 +159,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sketched_StageMap.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0Dh-Kc-IFb">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Sketched_StageMap.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0Dh-Kc-IFb">
                                 <rect key="frame" x="0.0" y="54" width="600" height="482"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="Mco-jj-yaq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="Q2k-Uq-ocT"/>
+                                    <constraint firstAttribute="width" secondItem="0Dh-Kc-IFb" secondAttribute="height" multiplier="300:241" id="QCf-sI-1vC"/>
+                                    <constraint firstAttribute="height" constant="482" id="vCI-b4-bsj"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-Yy-ru5">
                                 <rect key="frame" x="10" y="-28" width="42" height="21"/>
@@ -248,7 +255,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQL-Id-XQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="237"/>
+            <point key="canvasLocation" x="1361" y="985"/>
+        </scene>
+        <!--Floor Plan View Controller-->
+        <scene sceneID="22B-a6-RAf">
+            <objects>
+                <viewController id="hZg-Oi-lk0" customClass="FloorPlanViewController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x8n-NS-ROx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KMk-ql-fQI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dkh-HS-jWO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdX-fv-gqD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ep9-y9-9E7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144" y="985"/>
         </scene>
         <!--actDetailViewController-->
         <scene sceneID="i1V-TR-Rij">
@@ -319,7 +349,7 @@
             </objects>
             <point key="canvasLocation" x="2061" y="-473"/>
         </scene>
-        <!--Timetable View Controller-->
+        <!--Timetable-->
         <scene sceneID="eRP-bj-Lsc">
             <objects>
                 <viewController id="h7K-1f-Siz" customClass="TimetableViewController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
@@ -328,19 +358,31 @@
                         <viewControllerLayoutGuide type="bottom" id="EMq-GN-aDl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xoD-XC-hn3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQy-XN-7Sy">
                                 <rect key="frame" x="0.0" y="28" width="600" height="600"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaQ-lV-oVw">
+                                <rect key="frame" x="359" y="8" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BaQ-lV-oVw"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Timetable" id="Qxc-Ed-vCi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sqn-lO-eQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2172" y="237"/>
+            <point key="canvasLocation" x="1361" y="237"/>
         </scene>
         <!--Paaspop-->
         <scene sceneID="ufC-wZ-h7g">
@@ -374,6 +416,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="h7K-1f-Siz" kind="show" id="UqY-NJ-NYA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxc-d3-iL1">
                                 <rect key="frame" x="100" y="337" width="176" height="45"/>
@@ -503,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYH-lw-7gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="1081"/>
+            <point key="canvasLocation" x="1361" y="1693"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2ay-A1-ia3">
