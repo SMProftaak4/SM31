@@ -38,9 +38,10 @@
 		AFDCC1AA1A3AE27B004D4016 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDCC1A81A3AE27B004D4016 /* LaunchScreen.xib */; };
 		AFDCC1B61A3AE27B004D4016 /* PaaspopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCC1B51A3AE27B004D4016 /* PaaspopTests.swift */; };
 		F51E6CA41A5AB94F0067CCA8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E6CA31A5AB94F0067CCA8 /* GlobalVariables.swift */; };
-		F595AD471A56AF7100DE8D0A /* Sketched_StageMap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F595AD461A56AF7100DE8D0A /* Sketched_StageMap.jpg */; };
+		F568956F1A5DE7C400D21D71 /* Sketched_StageMap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F568956E1A5DE7C400D21D71 /* Sketched_StageMap.jpg */; };
 		F595AD4B1A5773CA00DE8D0A /* FloorPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595AD4A1A5773CA00DE8D0A /* FloorPlanViewController.swift */; };
 		F595AD4D1A57835D00DE8D0A /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F595AD4C1A57835D00DE8D0A /* Stage.swift */; };
+		F5C178311A5E86F000D5A03C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C178301A5E86F000D5A03C /* MapViewController.swift */; };
 		F5D03E351A5865B50043C140 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D03E341A5865B50043C140 /* TimetableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,9 +91,10 @@
 		AFDCC1B41A3AE27B004D4016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFDCC1B51A3AE27B004D4016 /* PaaspopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaaspopTests.swift; sourceTree = "<group>"; };
 		F51E6CA31A5AB94F0067CCA8 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
-		F595AD461A56AF7100DE8D0A /* Sketched_StageMap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sketched_StageMap.jpg; path = ../../Downloads/Sketched_StageMap.jpg; sourceTree = "<group>"; };
+		F568956E1A5DE7C400D21D71 /* Sketched_StageMap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sketched_StageMap.jpg; sourceTree = "<group>"; };
 		F595AD4A1A5773CA00DE8D0A /* FloorPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorPlanViewController.swift; sourceTree = "<group>"; };
 		F595AD4C1A57835D00DE8D0A /* Stage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		F5C178301A5E86F000D5A03C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F5D03E341A5865B50043C140 /* TimetableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +142,7 @@
 		AFA0CD481A408D9400902249 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				F595AD461A56AF7100DE8D0A /* Sketched_StageMap.jpg */,
+				F568956E1A5DE7C400D21D71 /* Sketched_StageMap.jpg */,
 				AF5D7A2A1A42F01C004F89F3 /* iLostLogo.png */,
 				AF5D7A281A42E793004F89F3 /* paaspopHead.png */,
 				AF5D7A171A42CA44004F89F3 /* paaspopLogo.png */,
@@ -191,6 +193,7 @@
 				AFA0CD571A40AD0200902249 /* NewsTableViewController.swift */,
 				F5D03E341A5865B50043C140 /* TimetableViewController.swift */,
 				AFA0CD591A40AD2300902249 /* NewsTableViewCell.swift */,
+				F5C178301A5E86F000D5A03C /* MapViewController.swift */,
 				AFA0CD5D1A40AD8F00902249 /* NewsDetailViewController.swift */,
 				AF5D7A131A42C7C8004F89F3 /* HomeViewController.swift */,
 				F595AD4A1A5773CA00DE8D0A /* FloorPlanViewController.swift */,
@@ -315,12 +318,12 @@
 				AFDCC1AA1A3AE27B004D4016 /* LaunchScreen.xib in Resources */,
 				AFA0CD511A408DEE00902249 /* anouk.jpg in Resources */,
 				AF5D7A231A42DB6C004F89F3 /* blog_Button.png in Resources */,
+				F568956F1A5DE7C400D21D71 /* Sketched_StageMap.jpg in Resources */,
 				AFA0CD501A408DEE00902249 /* bluespills.jpg in Resources */,
 				AF5D7A221A42DB6C004F89F3 /* artist_Button.png in Resources */,
 				AF5D7A251A42DB6C004F89F3 /* map_Button.png in Resources */,
 				AFDCC1A71A3AE27B004D4016 /* Images.xcassets in Resources */,
 				AF5D7A271A42DB6C004F89F3 /* timetable_Button.png in Resources */,
-				F595AD471A56AF7100DE8D0A /* Sketched_StageMap.jpg in Resources */,
 				AF5D7A241A42DB6C004F89F3 /* lost_Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +357,7 @@
 				AFDCC19D1A3AE27B004D4016 /* AppDelegate.swift in Sources */,
 				AFA0CD581A40AD0200902249 /* NewsTableViewController.swift in Sources */,
 				F595AD4D1A57835D00DE8D0A /* Stage.swift in Sources */,
+				F5C178311A5E86F000D5A03C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
