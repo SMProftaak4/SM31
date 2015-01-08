@@ -101,14 +101,30 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rh-yZ-jBM">
+                                            <rect key="frame" x="552" y="17" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="8Zb-oZ-QZJ"/>
+                                                <constraint firstAttribute="height" constant="30" id="qTi-Vr-xsk"/>
+                                            </constraints>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="ChangeFavorite:" destination="FXG-lm-TGv" eventType="touchUpInside" id="SNc-1q-a1w"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="5Rh-yZ-jBM" secondAttribute="centerY" id="3mN-eN-eot"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Gfo-ga-14T" secondAttribute="bottom" constant="-8" id="Fb4-Hd-EbK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="5Rh-yZ-jBM" secondAttribute="trailing" constant="10" id="PpV-kv-SE0"/>
                                         <constraint firstItem="Gfo-ga-14T" firstAttribute="top" secondItem="ak7-X4-KSP" secondAttribute="topMargin" constant="-8" id="lep-lA-gTt"/>
                                         <constraint firstItem="Gfo-ga-14T" firstAttribute="leading" secondItem="ak7-X4-KSP" secondAttribute="leadingMargin" constant="-8" id="obt-ed-rCS"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="btnFavorite" destination="5Rh-yZ-jBM" id="rrf-ej-tzn"/>
                                     <outlet property="lblTime" destination="Swo-7w-We7" id="avc-aG-FZT"/>
                                     <outlet property="lblTitle" destination="6CH-5U-9Cf" id="RsW-mK-OFA"/>
                                     <outlet property="lvPhoto" destination="Gfo-ga-14T" id="txc-hT-pMq"/>
