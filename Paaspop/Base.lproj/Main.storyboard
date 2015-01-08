@@ -599,7 +599,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
-                                <state key="normal" title="Lost &amp; Found">
+                                <state key="normal" title="iLost &amp; Found">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -717,8 +717,39 @@
                     <view key="view" contentMode="scaleToFill" id="asS-lw-ga4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkk-sF-un1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.098039215690000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgj-Yh-iUd">
+                                <rect key="frame" x="0.0" y="42" width="600" height="494"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.098039215690000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QnZ-B6-Hhh" firstAttribute="top" secondItem="Vgj-Yh-iUd" secondAttribute="bottom" id="2bP-zm-iUm"/>
+                            <constraint firstItem="lkk-sF-un1" firstAttribute="top" secondItem="8Jm-Ed-6Io" secondAttribute="bottom" id="PKL-4P-1VQ"/>
+                            <constraint firstItem="Vgj-Yh-iUd" firstAttribute="top" secondItem="lkk-sF-un1" secondAttribute="bottom" constant="-1" id="PYh-P1-7K1"/>
+                            <constraint firstItem="Vgj-Yh-iUd" firstAttribute="leading" secondItem="asS-lw-ga4" secondAttribute="leadingMargin" constant="-16" id="T4z-tT-nRr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vgj-Yh-iUd" secondAttribute="trailing" constant="-16" id="Y2k-4K-Jit"/>
+                            <constraint firstItem="Vgj-Yh-iUd" firstAttribute="top" secondItem="8Jm-Ed-6Io" secondAttribute="bottom" constant="42" id="iLj-zw-zlu"/>
+                            <constraint firstItem="lkk-sF-un1" firstAttribute="leading" secondItem="asS-lw-ga4" secondAttribute="leadingMargin" constant="-16" id="pAy-gv-w2l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lkk-sF-un1" secondAttribute="trailing" constant="-16" id="tau-0l-nUB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblSubTitle" destination="lkk-sF-un1" id="R8S-ZC-fRh"/>
+                        <outlet property="tvText" destination="Vgj-Yh-iUd" id="NYg-2U-OFd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYH-lw-7gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

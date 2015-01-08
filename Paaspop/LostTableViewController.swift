@@ -56,7 +56,7 @@ class LostTableViewController: UITableViewController {
         lostObject = self.lostObjects[indexPath.row]
 
         // Configure the cell... todo
-        cell.lblTitle.text = lostObject.title + lostObject.location
+        cell.lblTitle.text = lostObject.title + " " + lostObject.location
         cell.lblDate.text = lostObject.date
         
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator

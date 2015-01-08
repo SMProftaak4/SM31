@@ -33,6 +33,7 @@
 		AFA0CD5E1A40AD8F00902249 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0CD5D1A40AD8F00902249 /* NewsDetailViewController.swift */; };
 		AFB305711A5EE0AA0030EF8A /* star_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB3056F1A5EE0AA0030EF8A /* star_filled.png */; };
 		AFB305721A5EE0AA0030EF8A /* star_not_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB305701A5EE0AA0030EF8A /* star_not_filled.png */; };
+		AFB305741A5F02F70030EF8A /* PaaspopLaunch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFB305731A5F02F70030EF8A /* PaaspopLaunch.jpg */; };
 		AFC0C1981A5EB78C00D2B1A3 /* facebooklogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC0C1971A5EB78C00D2B1A3 /* facebooklogo.png */; };
 		AFC0C19A1A5EB79500D2B1A3 /* Paaspop2015_EB_LogoBeeldmerk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFC0C1991A5EB79500D2B1A3 /* Paaspop2015_EB_LogoBeeldmerk.jpg */; };
 		AFC0C19E1A5EB81800D2B1A3 /* LostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0C19B1A5EB81800D2B1A3 /* LostTableViewController.swift */; };
@@ -97,6 +98,7 @@
 		AFA0CD5D1A40AD8F00902249 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		AFB3056F1A5EE0AA0030EF8A /* star_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_filled.png; sourceTree = "<group>"; };
 		AFB305701A5EE0AA0030EF8A /* star_not_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_not_filled.png; sourceTree = "<group>"; };
+		AFB305731A5F02F70030EF8A /* PaaspopLaunch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PaaspopLaunch.jpg; sourceTree = "<group>"; };
 		AFC0C1971A5EB78C00D2B1A3 /* facebooklogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebooklogo.png; sourceTree = "<group>"; };
 		AFC0C1991A5EB79500D2B1A3 /* Paaspop2015_EB_LogoBeeldmerk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Paaspop2015_EB_LogoBeeldmerk.jpg; sourceTree = "<group>"; };
 		AFC0C19B1A5EB81800D2B1A3 /* LostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LostTableViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				AFB305701A5EE0AA0030EF8A /* star_not_filled.png */,
 				AFC0C1971A5EB78C00D2B1A3 /* facebooklogo.png */,
 				AF5D7A171A42CA44004F89F3 /* paaspopLogo.png */,
+				AFB305731A5F02F70030EF8A /* PaaspopLaunch.jpg */,
 				AF5D7A151A42C84F004F89F3 /* Paaspop2015Logo.jpg */,
 				AFC0C1991A5EB79500D2B1A3 /* Paaspop2015_EB_LogoBeeldmerk.jpg */,
 				AFA0CD4C1A408DEE00902249 /* anouk.jpg */,
@@ -368,6 +371,7 @@
 				AFDCC1A51A3AE27B004D4016 /* Main.storyboard in Resources */,
 				AFC0C1981A5EB78C00D2B1A3 /* facebooklogo.png in Resources */,
 				AF5D7A291A42E793004F89F3 /* paaspopHead.png in Resources */,
+				AFB305741A5F02F70030EF8A /* PaaspopLaunch.jpg in Resources */,
 				AF5D7A181A42CA44004F89F3 /* paaspopLogo.png in Resources */,
 				AFA0CD521A408DEE00902249 /* colincloud.jpg in Resources */,
 				AFA0CD4F1A408DEE00902249 /* bestoffoo.jpg in Resources */,
