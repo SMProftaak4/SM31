@@ -12,10 +12,12 @@ import UIKit
 
 /// An updated version of FloorPlanController, this one feature pinch-zoom and panning support as well as actual stagenames and connected acts and timetable.
 /// Currently uses a sketched up floorplan for simplicity and visibility. At time of writing we do not have an up-to-date (empty) map.
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, UIScrollViewDelegate{
 
     // Variables
+    @IBOutlet weak var imageview: UIImageView!
     
+    @IBOutlet weak var scrollview: UIScrollView!
     
     /// Keep track of stages and their acts/crowds.
     var stages : [Stage] = [Stage]() // You might want to do this outside of this controller.
@@ -29,7 +31,7 @@ class MapViewController: UIViewController {
     
     // Outlets
     
-    @IBOutlet weak var buttonSelectedStage: UIButton!    
+    @IBOutlet weak var buttonSelectedStage: UIButton!
     @IBOutlet weak var buttonCurrentAct: UIButton!
     
     // Outlets of Stages
@@ -46,6 +48,13 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // Set delegate for UIScrollView
+        self.scrollview.delegate = self
+        
+        // Set viewsize ans frame.
+        scrollview.contentSize = imageview.image!.size
+        imageview.frame = CGRectMake(0, 0, imageview.image!.size.width, imageview.image!.size.height)
         
         // Add buttons to list for future reference.
         StageUIButtons.append(buttonStageApollo)
@@ -99,8 +108,12 @@ class MapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
+    func viewForZoomingInScrollView(scrollView : UIScrollView) -> UIView
+    {
+        // return which subview we want to zoom
+        return self.imageview;
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -108,6 +121,6 @@ class MapViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
