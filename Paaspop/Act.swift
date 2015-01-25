@@ -16,7 +16,7 @@ class Act {
     var stage: String
     var times: [String]
     var favorite: Bool
-    
+
     init(title: String, subtitle:String, info: String, photoUrl: String, stage: String,times: [String], favorite: Bool){
         self.title = title
         self.subtitle = subtitle
