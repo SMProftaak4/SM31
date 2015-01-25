@@ -17,6 +17,9 @@ DerivedData
 *.ipa
 *.xcuserstate
 
+# Manually added to resolve merge conflict.
+*.xcworkspace
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
