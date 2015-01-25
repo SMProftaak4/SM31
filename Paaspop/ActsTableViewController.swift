@@ -77,19 +77,11 @@ class ActsTableViewController: UITableViewController, UISearchBarDelegate, UISea
         } else{
             title = act.title
         }*/
-        cell.act  = act
+
         cell.lblTitle.text = act.title
         cell.lblTime.text = act.stage
         let image : UIImage = UIImage(named: act.photoUrl)!
         cell.lvPhoto.image = image
-        
-        if act.favorite{
-            let filled: UIImage = UIImage(named: "star_filled.png")!
-            cell.btnFavorite.setBackgroundImage(filled, forState: UIControlState.Normal)
-        } else{
-            let notFilled: UIImage = UIImage(named: "star_not_filled.png")!
-            cell.btnFavorite.setBackgroundImage(notFilled, forState: UIControlState.Normal)
-        }
         
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         

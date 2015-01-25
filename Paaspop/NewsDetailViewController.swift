@@ -12,15 +12,12 @@ class NewsDetailViewController: UIViewController {
 
     var newsitem: NewsItem!
     
-    @IBOutlet weak var tvText: UITextView!
-    @IBOutlet weak var lblSubTitle: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = self.newsitem.title
-        self.lblSubTitle.text = self.newsitem.subTitle
-        self.tvText.text = self.newsitem.date + " - " + self.newsitem.text// Do any additional setup after loading the view.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
