@@ -20,7 +20,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //var image = UIImage(named: "paaspopLogo.png")! as UIImage
         var imageHead = UIImage(named: "paaspopHead.png")! as UIImage
         //self.navigationController?.navigationBar.setBackgroundImage(image, forBarMetrics: .Default)

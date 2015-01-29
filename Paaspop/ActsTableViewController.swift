@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ActsTableViewController: UITableViewController, UISearchBarDelegate, UISearchDisplayDelegate {
     
@@ -15,7 +16,7 @@ class ActsTableViewController: UITableViewController, UISearchBarDelegate, UISea
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        JsonData.sharedInstance.getTimeData()
         //sample data acts
         self.acts = [Act(title: "Anouk", subtitle: "", info: "Eigenlijk wilden we hier alleen haar naam in hoofdletters zetten. Met een uitroepteken erbij als uiting van blijdschap en respect. ANOUK! dus. Maar vooruit, we zijn nu toch op dreef.  Anouks komst naar Schijndel in 2011 betekende dat  Paaspop er voorgoed een derde dag bij kreeg (de vrijdag), waardoor het vanaf dat jaar dus een driedaags evenement werd. We zijn verguld dat ’s lands coolste rockzangeres in 2015 opnieuw Paaspop op stelten komt zetten na die zeer memorabele show uit 2011. Haar nieuwe cd Paradise And Back Again is nèt uit en belooft alvast veel muzikaal moois.  ", photoUrl: "anouk.jpg",stage: "apollo", times: [String](), favorite: false),
         Act(title: "Best of Foo", subtitle: "Foo Fighters Tribute", info: "In Best of Foo hebben vijf gelouterde muzikanten elkaar gevonden. Zij benaderen de sound van de Foo Fighters ‘as close as you can get’. Makkelijk schakelend tussen stijlen brengt het vijftal een schat aan podiumervaring bij elkaar. We noemen Andrew Elt (Gin on the Rocks, Sleeze Beez, The Moon), drummer Lambert van den Munckhof (Cobs & Robbers, Pure Cult, Action in DC), Natasja Thijssen (Purple Haze, OXX-Band Mooi Wark) en de gitaristen Erik van der Ven (Bodine) en Tom Verstegen (Atomic Rock). Muziek in laagjes, precies zoals bij hun voorbeelden. Best of Foo is er daarom voor de eigentijdse muziekliefhebber en zéker voor hen die een muzikale en strakke tributeband weten te waarderen. In your honor!", photoUrl: "bestoffoo.jpg", stage: "Tunderbolt", times: [String](), favorite: true),
@@ -25,7 +26,7 @@ class ActsTableViewController: UITableViewController, UISearchBarDelegate, UISea
         
         //Reload the table
         self.tableView.reloadData()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -148,7 +149,6 @@ class ActsTableViewController: UITableViewController, UISearchBarDelegate, UISea
     // TODO: check height for string at index.
     return 64;
     }
-    
     
     /*
     // Override to support conditional editing of the table view.

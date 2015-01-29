@@ -18,6 +18,7 @@ class ActsDetailViewController: UIViewController {
     @IBOutlet weak var tvInfo: UITextView!
     
     override func viewDidLoad() {
+        JsonData.sharedInstance.getActData("Anouk")
         super.viewDidLoad()
         var title: String
         if !act.subtitle.isEmpty{

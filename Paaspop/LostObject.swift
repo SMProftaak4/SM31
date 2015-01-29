@@ -8,12 +8,14 @@
 
 import Foundation
 class LostObject {
+    var id: Int
     var title: String
     var location: String
     var date: String
     var imgUrl: String
     
-    init(title: String, location: String, date: String, imgUrl: String){
+    init(id: Int, title: String, location: String, date: String, imgUrl: String){
+        self.id = id
         self.title = title
         self.location = location
         self.date = date

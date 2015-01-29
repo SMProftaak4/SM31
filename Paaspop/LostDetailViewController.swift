@@ -33,7 +33,8 @@ class LostDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = NSURL(string: "http://www.ilost.nl")
+        var stringurl = "https://ilost.co/nl/found/" + String(lostObject.id)
+        let url = NSURL(string: stringurl)
         
         let request = NSURLRequest(URL: url!)
         

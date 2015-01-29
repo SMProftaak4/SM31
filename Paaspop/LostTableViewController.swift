@@ -15,12 +15,62 @@ class LostTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //sample data lostobjects
-        self.lostObjects = [LostObject(title:"Sleutelbos",location:"groote tent",date:"22-01-15",imgUrl:"empty"),
-            LostObject(title:"Iphone",location:"wc's",date:"22-01-15",imgUrl:"empty"),
-            LostObject(title:"Zwarte beurs",location:"Festival terrein",date:"23-01-15",imgUrl:"empty")]
+        //lostObjects = JsonData.sharedInstance.getLostData()
+        var lostitems = [LostObject]()
+        var lostitem: LostObject!
+        let url = NSURL(string: "https://ilost.co/api/search")!
+        let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        //Reload the table
+        request.HTTPBody = "{\n    \"query\": \"paaspop\",\n    \"size\": 10\n}".dataUsingEncoding(NSUTF8StringEncoding);
+        
+        
+        
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(request) { (data: NSData!, response: NSURLResponse!, error: NSError!) in
+            
+            if error != nil {
+                // Handle error...
+                return
+            }
+            
+            //println(error)
+            //println(response)
+            //println(NSString(data: data, encoding: NSUTF8StringEncoding))
+            let ilost = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
+            let result = ilost["result"] as NSDictionary
+            let items = result["items"] as NSArray
+            //println(items)
+            for var index = 0; index < items.count; ++index{
+                let id = items[index]["id"] as? Int
+                var image = items[index]["image"] as? String
+                let reportedDate = items[index]["reportedDate"]as? String
+                let title = items[index]["title"]as? String
+                if image == nil{
+                    image = ""
+                }
+                //println(id)
+                //println(image)
+                //println(reportedDate)
+                //println(title)
+                lostitem = LostObject(id: id!, title: title!, location: "Paaspop", date: reportedDate!, imgUrl: image!)
+                self.lostObjects.append(lostitem)
+            }
+            self.tableView.reloadData()
+            //println(lostitems.count)
+        }
+        
+        task.resume()
+
+        //println("table")
+        //println(lostObjects.count)
+        //sample data lostobjects
+        /*self.lostObjects = [LostObject(title:"Sleutelbos",location:"groote tent",date:"22-01-15",imgUrl:"empty"),
+            LostObject(title:"Iphone",location:"wc's",date:"22-01-15",imgUrl:"empty"),
+            LostObject(title:"Zwarte beurs",location:"Festival terrein",date:"23-01-15",imgUrl:"empty")]*/
+        
+
         self.tableView.reloadData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -56,7 +106,7 @@ class LostTableViewController: UITableViewController {
         lostObject = self.lostObjects[indexPath.row]
 
         // Configure the cell... todo
-        cell.lblTitle.text = lostObject.title + " " + lostObject.location
+        cell.lblTitle.text = lostObject.title
         cell.lblDate.text = lostObject.date
         
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
@@ -84,8 +134,6 @@ class LostTableViewController: UITableViewController {
             
         }
     }
-
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
