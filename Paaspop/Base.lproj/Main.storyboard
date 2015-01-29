@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B3I-1w-hCD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B3I-1w-hCD">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -7,6 +7,41 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Personal Timetable View Controller-->
+        <scene sceneID="XST-hF-peG">
+            <objects>
+                <collectionViewController id="GkE-4F-xxE" customClass="PersonalTimetableViewController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EiA-fW-QfX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OWI-zh-N8v">
+                            <size key="itemSize" width="250" height="250"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonalTimetableCell" id="r2T-93-njO">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="GkE-4F-xxE" id="jT5-fW-npR"/>
+                            <outlet property="delegate" destination="GkE-4F-xxE" id="3ou-SM-sep"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biN-Ur-EKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="985"/>
+        </scene>
         <!--News-->
         <scene sceneID="giq-H5-LW7">
             <objects>
@@ -298,7 +333,7 @@
                                     <constraint firstAttribute="height" constant="205" id="IBZ-pw-QdY"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLH-dm-aFC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLH-dm-aFC">
                                 <rect key="frame" x="0.0" y="249" width="600" height="287"/>
                                 <color key="backgroundColor" red="0.1647058824" green="0.1137254902" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -349,40 +384,27 @@
             </objects>
             <point key="canvasLocation" x="2061" y="-473"/>
         </scene>
-        <!--Timetable-->
-        <scene sceneID="eRP-bj-Lsc">
+        <!--Timetable Day Controller-->
+        <scene sceneID="wx1-sI-dJN">
             <objects>
-                <viewController id="h7K-1f-Siz" customClass="TimetableViewController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Agj-JM-ZRz"/>
-                        <viewControllerLayoutGuide type="bottom" id="EMq-GN-aDl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xoD-XC-hn3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQy-XN-7Sy">
-                                <rect key="frame" x="0.0" y="28" width="600" height="600"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaQ-lV-oVw">
-                                <rect key="frame" x="359" y="8" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="BaQ-lV-oVw"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" title="Timetable" id="Qxc-Ed-vCi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqn-lO-eQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="kX2-2h-b9e" customClass="TimetableDayController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KvJ-oC-UIA"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ZPU-eP-wC4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="j3R-LM-Pnp" kind="relationship" relationship="viewControllers" id="Dth-4e-830"/>
+                        <segue destination="toc-oa-zT2" kind="relationship" relationship="viewControllers" id="aM9-Ce-YWr"/>
+                        <segue destination="eUt-N7-J0F" kind="relationship" relationship="viewControllers" id="g5N-LK-IeI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLh-fl-bEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1361" y="237"/>
+            <point key="canvasLocation" x="2061" y="237"/>
         </scene>
         <!--Paaspop-->
         <scene sceneID="ufC-wZ-h7g">
@@ -396,13 +418,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GP0-9d-rFL">
-                                <rect key="frame" x="-1" y="93" width="155" height="350"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="nyW-iD-cvF"/>
-                                    <constraint firstAttribute="width" constant="155" id="wLl-4I-T5g"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiU-Ng-qWu">
                                 <rect key="frame" x="84" y="154" width="192" height="45"/>
                                 <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -417,7 +432,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="h7K-1f-Siz" kind="show" id="UqY-NJ-NYA"/>
+                                    <segue destination="t72-k3-08F" kind="push" id="hB8-6a-0g2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxc-d3-iL1">
@@ -480,6 +495,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="GkE-4F-xxE" kind="show" id="rPL-e4-fDQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOP-xl-li0">
                                 <rect key="frame" x="105" y="276" width="171" height="45"/>
@@ -498,6 +516,13 @@
                                     <segue destination="B0P-Lf-O9W" kind="show" id="KFO-yV-Ugy"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GP0-9d-rFL">
+                                <rect key="frame" x="-1" y="93" width="155" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="nyW-iD-cvF"/>
+                                    <constraint firstAttribute="width" constant="155" id="wLl-4I-T5g"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.2196078431372549" green="0.16078431372549021" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -572,9 +597,252 @@
             </objects>
             <point key="canvasLocation" x="-140" y="237"/>
         </scene>
+        <!--Timetable Stages View Controller-->
+        <scene sceneID="5ok-dg-ccj">
+            <objects>
+                <collectionViewController id="t72-k3-08F" customClass="TimetableStagesViewController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="12Z-EG-nV6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3qy-Uo-Zbm">
+                            <size key="itemSize" width="130" height="130"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StageCell" id="PWd-XS-VRR">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="t72-k3-08F" id="DfL-19-PeC"/>
+                            <outlet property="delegate" destination="t72-k3-08F" id="4eL-IH-yNt"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="hdq-OU-OQe"/>
+                    <connections>
+                        <segue destination="kX2-2h-b9e" kind="show" identifier="StageSelectToTimetable" id="0sx-Vs-T6G"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgW-tV-RqZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="237"/>
+        </scene>
+        <!--Zondag-->
+        <scene sceneID="CDq-8b-T3e">
+            <objects>
+                <tableViewController id="eUt-N7-J0F" customClass="ZondagTableViewController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="22" sectionFooterHeight="22" id="lbU-8E-uGn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimetableCell" rowHeight="58" id="BZD-el-wkZ" customClass="TimetableCell" customModule="Paaspop" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BZD-el-wkZ" id="Od9-pB-Z7N">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXr-8L-LKx">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="58"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ACT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOB-Jv-FpU">
+                                            <rect key="frame" x="108" y="-9" width="355" height="58"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$TIMES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiz-sj-ws0">
+                                            <rect key="frame" x="108" y="36" width="275" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="actImage" destination="dXr-8L-LKx" id="3eI-ss-1Rr"/>
+                                    <outlet property="actNameLabel" destination="yOB-Jv-FpU" id="e8N-Q9-WU6"/>
+                                    <outlet property="timeLabel" destination="eiz-sj-ws0" id="bdQ-ge-rFk"/>
+                                    <segue destination="FEP-Qd-gwD" kind="show" id="qQd-Pc-r5T"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="delegate" destination="eUt-N7-J0F" id="IeZ-az-Bav"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Zondag" id="RtD-YO-xdX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezr-Nv-4xm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ACT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gbe-0a-JVP">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$TIMES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OMS-t9-oHV">
+                    <rect key="frame" x="0.0" y="0.0" width="298" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gro-KE-LVN">
+                    <rect key="frame" x="0.0" y="0.0" width="177" height="103"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="3281" y="984"/>
+        </scene>
+        <!--Vrijdag-->
+        <scene sceneID="b3U-TM-mFs">
+            <objects>
+                <tableViewController id="j3R-LM-Pnp" customClass="VrijdagTableViewController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="22" sectionFooterHeight="22" id="5st-ih-7zs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimetableCell" rowHeight="58" id="VHC-cd-cuO" customClass="TimetableCell" customModule="Paaspop" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VHC-cd-cuO" id="OYM-JV-9aY">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNy-hD-8hP">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="58"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ACT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocv-Jy-HdG">
+                                            <rect key="frame" x="108" y="-9" width="355" height="58"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$TIMES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLh-xZ-Vjd">
+                                            <rect key="frame" x="108" y="36" width="275" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="actImage" destination="lNy-hD-8hP" id="xAc-vn-uHl"/>
+                                    <outlet property="actNameLabel" destination="Ocv-Jy-HdG" id="eob-QP-1q9"/>
+                                    <outlet property="timeLabel" destination="DLh-xZ-Vjd" id="Qa1-1H-JtS"/>
+                                    <segue destination="FEP-Qd-gwD" kind="show" id="gwB-Di-6un"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="delegate" destination="j3R-LM-Pnp" id="4B4-T8-fZK"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Vrijdag" id="euI-aK-Htg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRR-ll-VES" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ACT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yz7-fO-puS">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$TIMES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5NT-Zp-iD2">
+                    <rect key="frame" x="0.0" y="0.0" width="298" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8mm-Mp-slV">
+                    <rect key="frame" x="0.0" y="0.0" width="177" height="103"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="3289" y="-436"/>
+        </scene>
+        <!--Zaterdag-->
+        <scene sceneID="Yxc-zp-Aob">
+            <objects>
+                <tableViewController id="toc-oa-zT2" customClass="ZaterdagTableViewController" customModule="Paaspop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="22" sectionFooterHeight="22" id="yyN-t0-aDY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimetableCell" rowHeight="58" id="B58-7r-ktM" customClass="TimetableCell" customModule="Paaspop" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B58-7r-ktM" id="lFE-eR-Hjo">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$TIMES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vP-Fd-63U">
+                                            <rect key="frame" x="108" y="36" width="275" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oze-c3-UJz">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="58"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ACT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNm-dD-mKS">
+                                            <rect key="frame" x="108" y="-9" width="355" height="58"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="actImage" destination="oze-c3-UJz" id="sYf-ky-wMM"/>
+                                    <outlet property="actNameLabel" destination="TNm-dD-mKS" id="uEt-Zy-B18"/>
+                                    <outlet property="timeLabel" destination="1vP-Fd-63U" id="NSR-V6-TAx"/>
+                                    <segue destination="FEP-Qd-gwD" kind="show" id="Bdw-Br-KkL"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="delegate" destination="toc-oa-zT2" id="yfb-6d-5to"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Zaterdag" id="nPk-40-gob"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhD-iA-dJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ACT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cF1-Pg-03b">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$TIMES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oBc-wf-4Ud">
+                    <rect key="frame" x="0.0" y="0.0" width="298" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="uXy-5S-RTj">
+                    <rect key="frame" x="0.0" y="0.0" width="177" height="103"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="3281" y="263"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Sketched_StageMap.jpg" width="4128" height="2322"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qQd-Pc-r5T"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.86274509799999999" green="0.0" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>
